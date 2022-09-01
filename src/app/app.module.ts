@@ -44,6 +44,8 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTreeModule } from '@angular/material/tree';
+import { ToolbarComponent } from './comps/toolbar/toolbar.component';
+import { ToolbarToolComponent } from './comps/toolbar/toolbar-tool/toolbar-tool.component';
 
 export const MATERIAL_MODULES = [
   CdkAccordionModule,
@@ -95,7 +97,7 @@ export const MATERIAL_MODULES = [
     HttpClientModule,
     ...MATERIAL_MODULES,
   ],
-  declarations: [AppComponent],
+  declarations: [AppComponent, ToolbarComponent, ToolbarToolComponent],
   providers: [],
   bootstrap: [AppComponent],
 })
